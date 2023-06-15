@@ -20,27 +20,31 @@
             <li>But use h1 to h6 hierarchically;</li>
             <li>Don't use heading to get the styles.</li>
             <ul type="square">
-                <li>use the style (css) or text formatting instead, such as: </li>
+                <li>use the style (CSS) instead rather than text formatting , such as: </li>
                     <ul type="circle">
                         <li><b>bold</b> to emphasize</li>
-                        <li>strong to emphasize more than bold</li>
+                        <li>strong to <strong>emphasize</strong> more than bold</li>
                         <li><i>italic</i> for foreign or slang terms</li>
+                        <li><em>this</em> also used for emphasize</li>
                         <li>subscript like <sub>down here</sub></li>
                         <li>superscript like <sup>up here</sup></li>
                     </ul>
-                <li>because heading has semantic meaning (also <b>bold</b>, strong, and <i>italic</i>)</li>
+                <li>because heading and text formatting has semantic meaning</li>
             </ul>
         </ol>
         <br>
         <h3 style="color: yellow;">Now We Make A Table</h3>
         <p>First, count how many rows and column you'd like to make. So you'll know how many tr (vertical) and td (horizontal), also use th for table head.</p>
         <h4>Colors of Rainbow</h4>
-        <style>
+        <!--
+            <style>
             table, th, td {
                 border: 1px solid black
             }
-        </style>
-        <!--Style tabel ini nanti lebih baik dibuat di file CSS berbeda-->
+             </style>
+        
+            Style tabel ini nanti lebih baik dibuat di file CSS berbeda
+        -->
         <table>
             <tr>
                 <th>No</th>
@@ -92,10 +96,171 @@
             </tr>
         </table>
         <br>
-        <hr>
-        <h3>First Practice</h3>
-        <p>Let's make Calculator with a little bit of UI</p>
+        Here are some rainbow for you!
+        <br>
+        Use alt to describe your image for search engine purposes, etc.
+        <br>
+        <img src="double-rainbow.jpg" alt="double rainbow" width="400" height="200"/>
+        <img src="https://cdn.shopify.com/s/files/1/0012/4832/9781/products/IMG_6434.jpg?v=1643832733" alt="rainbow roses" width="200" height="200"/>
+        <p>
+            Use anchor to add link and target blank to open it in new tab. 
+            <br> This is absolute link :)
+            <a href="https://www.google.com/search?q=triple+rainbow&tbm=isch&sa=X&ved=2ahUKEwisgJH2zcT_AhVW9zgGHS5TBkAQ0pQJegQIDRAB&biw=1366&bih=610&dpr=1" 
+            target="_blank">look for crazy rainbow here
+            </a>
+            <br> And relative link using html file in your folder, <a href="index.html">this same page</a> or add "/" just before the html file name for link <a href="/index.html" target="_blank">like this</a>
+        </p>
 
+        <h3 style="color: greenyellow;">Learn How to Look for Text in The Same Page</h3>
+        <p> Using anchor to search and id to add the keyword</p>
+        <a href="#me"> FIND RAINBOW </a>
+        <p id="you">gray</p><p id="you">gray</p>
+        <p id="you">gray</p><p id="you">gray</p>
+        <p id="you">gray</p><p id="you">gray</p>
+        <p id="you">gray</p><p id="you">gray</p>
+        <p id="you">gray</p><p id="you">gray</p>
+        <p id="you">gray</p><p id="you">gray</p>
+        <p id="you">gray</p><p id="you">gray</p>
+        <p id="you">gray</p><p id="you">gray</p>
+        <p id="you">gray</p><p id="you">gray</p>
+        <p id="you">gray</p><p id="you">gray</p>
+        <p id="you">gray</p><p id="you">gray</p>
+        <p id="you">gray</p><p id="you">gray</p>
+        <p id="you">gray</p><p id="you">gray</p>
+        <p id="you">gray</p><p id="you">gray</p>
+        <p id="you">gray</p><p id="you">gray</p>
+        <p id="you">gray</p><p id="you">gray</p>
+        <p id="you">gray</p><p id="you">gray</p>
+        <p id="you">gray</p><p id="you">gray</p>
+        <p id="you">gray</p><p id="you">gray</p>
+        <p id="you">gray</p><p id="you">gray</p>
+        <p id="you">gray</p><p id="you">gray</p>
+        <p id="you">gray</p><p id="you">gray</p>
+        <p id="you">gray</p><p id="me">rainbow</p>
+
+        <h3 style="color: aqua;">Learn About Making Form</h3>
+        <p> We need backend / API for this form to fully functioning</p>
+        <h4>Write About Yourself!</h4>
+        <form>
+            <p>
+                <label for="name">Write your name here</label>
+                <input name="name" type="text">
+            </p>
+            <p>
+                <label for="age">How old are you?</label>
+            <input name="age" type="number" min="17" max="100">
+            </p>
+            <p>
+                <label for="radio">Are you a...</label>
+                <br>
+                <input type="radio"> Female
+                <br>
+                <input type="radio"> Male  
+                
+            <!-- penjelasan penggunaan radio button
+                untuk memilih 1 pilihan (magic number 5)
+                pakai value kalau sudah connect ke auto API
+                valuenya bisa HTML, CSS, atau JavaScript
+                <input type="radio" id="xxx" name="namanya apa disini" value="XXX">
+                <label for="xxx">XXX</label>
+            -->
+            <p>
+                I am from <br>
+                <select>
+                    <optgroup label="America">
+                        <option>North America</option>
+                        <option>South America</option>
+                        <option>Central America</option>
+                        <option>Caribbean</option>
+                    </optgroup>
+                    <optgroup label="Asia Pacific">
+                        <option>Central & South Asia</option>
+                        <option>Northeastern Asia</option>
+                        <option>Southeastern Asia</option>
+                        <option>Australia</option>
+                        <option>Oceania</option>
+                    </optgroup>
+                    <optgroup label="Europe">
+                        <option>Northern Europe</option>
+                        <option>Southern Europe</option>
+                        <option>Eastern Europe</option>
+                        <option>Western Europe</option>
+                    </optgroup>
+                    <optgroup label="Middle East/Africa">
+                        <option>Middle East</option>
+                        <option>Northern Africa</option>
+                        <option>Southern Africa</option>
+                    </optgroup>
+                    <option selected><i>This part of the world...</i></option>
+                </select>
+            </p>
+            <p>
+                <label for="checkbox">What drinks do you like?</label>
+                <br> <input type="checkbox"> Tea
+                <br> <input type="checkbox"> Fruit Flavored Tea
+                <br> <input type="checkbox"> Tea + Soda
+                <br> <input type="checkbox"> Black Coffee
+                <br> <input type="checkbox"> Flavored Coffee/Late
+                <br> <input type="checkbox"> Milk Tea
+                <br> <input type="checkbox"> Milk
+                <br> <input type="checkbox"> Soda
+                <br> <input type="checkbox"> Juice
+                <br> <input type="checkbox"> Just plain water...
+            </p>
+            <p>
+                Describe yourself! <br>
+                <textarea rows="8" cols="100">I am...</textarea>
+            </p>
+            <fieldset>
+                <legend>Sign up here</legend>
+                <p>
+                    <label for="email">You can type your email</label>
+                    <input name="email" type="email">
+                </p>
+                <p>
+                    <label for="password">Write your password</label>
+                    <input name="password" type="password" required>
+                </p>
+            </fieldset>
+            <br>           
+            <input type="submit" value="I'm done!">
+        </form>
+
+        <h3 style="color: blue;">About Button</h3>
+        With button tag and type and you can add onclick to run JavaScript.
+        <button type="button">
+            OK
+        </button>
+        <button type="button" onclick="doSomething();">
+            Apply
+        </button>
+
+        <h3 style="color: blueviolet;">HTML Elements</h3>
+        Layout Elements
+        <ol type="a">
+            <li>header</li>
+            <li>nav</li>
+            <li>section</li>
+            <li>article</li>
+            <li>aside</li>
+            <li>footer</li>
+            <li>details</li>
+            <li>summary</li>
+        </ol>
+        Non Semantic Elements
+        <ul>
+            <li>div (block)</li>
+            <li>span (inline)</li>
+        </ul>
+        Semantic Elements
+        <ul>
+            <li>form</li>
+            <li>table</li>
+            <li>article</li>
+        </ul>
+        You have to be careful! Writing HTML with the right semantics will ease the development process also increase SEO score and web accessibility. 
+        <br><br>
+        <hr>
         <!-- Komentar yang tidak terlihat di halaman web, digunakan untuk menulis reminder, message, dll -->
     </body>
 </html>
