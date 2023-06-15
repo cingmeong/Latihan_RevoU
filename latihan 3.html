@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Another CSS</title>
+        <style>
+            span {
+                display: block;
+            }
+            .container {
+                width: 1000px;
+                height: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .container div {
+                width: 100%;
+                padding: 10px;
+                text-align: center;
+                font-size: 14sp;
+                color: #6edefa;
+                background-color: #54027a;
+                border: 2px solid orange;
+                border-radius: 10px;
+                margin: 5px;
+            }
+            .box {
+                background-color: #444;
+                color: #fff;
+                border-radius: 5px;
+                padding: 20px;
+                font-size: 150%;
+                text-align: center;
+            }
+            .wrapper {
+                display: grid;
+                grid-template-columns: 100px 100px 100px;
+                grid-template-rows: 100px 100px;
+                grid-gap: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="container">
+            <div class="home">Home</div>
+            <div class="search">Search</div>
+            <div class="logout">Logout</div>
+        </nav>
+        <h1>Hello World!</h1>
+        <h2>Display</h2>
+        <p>
+            We have inline, block, flex, and grid
+        </p>
+        <span> this is span with block display </span>
+        <span> on navigation up there, I use display flex so those boxes get inline</span>
+        <span> there are container and items on flex (and use the container as a parent of div to style it) </span>
+        <span> Grid is an alternative of flex. The difference is grid can layout 2 dimentional content while flex only one dimentional.</span>
+            <ul>You can look for guidelines <option value=""></option>n:
+                <li>w3schools</li>
+                <li>MDN</li>
+                <li>CSS tricks (especially for flex and grid)</li>
+            </ul>
+        
+        <h2>CSS Box Model</h2>
+        <p>There is content which have widthand height, then padding, border, and margin. We use this on navigation up ther</p>
+        <p>Background color applied to behind content and padding. We can adjust the widht of padding by once or one by one (top, bottom, left, right)</p>
+        <p>For border, we can set widht, styles (solid, doted, dashed, double, inset, outset, groove, ridge), color, radius, shadow,  etc.</p>
+        <p>Margin can also divided with top, bottom, right, and left.</p>
+    
+    <h2>CSS Align</h2>
+    <p>To be used for flex and grid</p>
+
+    <h2>Now Practicing on Making Grid</h2>
+    <div class="wrapper">
+        <div class="box">A</div>
+        <div class="box">B</div>
+        <div class="box">C</div>
+        <div class="box">D</div>
+        <div class="box">E</div>
+        <div class="box">F</div>
+    </div>
+    </body>
+</html>
