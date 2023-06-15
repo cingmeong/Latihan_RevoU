@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practice: CSS</title>
+        <style>
+            h1 {color: blueviolet;}
+            h2 {color: rgb(100, 162, 255);}
+            li {color: rgb(255, 0, 140);}
+            .cthclass {color: #25a888;}
+            #cthid {color: rgb(48, 241, 122);}
+            a[target="bg one"] {
+                background-color: rgb(248, 182, 220);
+            }
+            a:hover {
+                background-color: yellow;
+            }
+            div {
+                width: 100px;
+                height: 100px;
+                background-color:#25a888 ;
+            }
+            #bg1 {
+                background: linear-gradient(rgb(0, 183, 255),rgb(204, 0, 255));
+            }
+            #bg2 {
+                background: linear-gradient(90deg,blue,#25a888);
+            }
+            #bg3 {
+                background: radial-gradient(rgb(125, 23, 134),rgb(0, 183, 255));
+            }
+                    
+        </style>
+    </head>
+    <body>
+        <h1>Today is All About CSS</h1>
+
+        <h2>About Text Color</h2>
+        We can use:
+        <ul>
+            <li>word</li> such as: yellow
+            <li>red, green, blue</li>such as: rgb(0, 0, 255)
+            <li>hexadecimal</li>with # then 6 digits number and A-F letters, such as: #00FF00
+            <li>hue, saturation, lightness value</li>such as: hsl(360,100%,75%)
+            <li>cyan, magenta, yellow, key(black) </li>
+            <li>alpha transparancy</li>
+            <ul>
+                <li>rgba(0,0,255,0.728)</li>
+                <li>hsla(360,100%,75%,0.5)</li>
+            </ul>
+        </ul>
+
+        <h2>What About Background Color?</h2>
+        <div></div>
+        <div id="bg1"></div>
+        <div id="bg2"></div>
+        <div id="bg3"></div>
+
+        <h2>Let's Learn About CSS Selector</h2>
+        <p>Hierarchically, there are:</p>
+        <ol>
+            <li class="cthclass" id="cthid">id: used on tag with specific id (write # on style)</li>
+            <li class="cthclass" id="cthclass">class: used on tag with specific class (write . on style)</li>
+            <li>tag: used on tags like heading, paragraph, list, etc</li>
+        </ol>
+
+        <h2>Now Time for Attribute Selector</h2>
+        <p>Giving style to targeted text with the same tag. 
+            <br>You need to type [target] inside style tag (head) and inside the tag itself (body). 
+            <br>You can target for specific target using specific word or just the whole target. Look at the pink background color.
+            <br>Other than that, you can use :hover on the style tag. Look at the yellow background color that visible with your cursor hovering on the text.
+        </p>
+        <a href="https://i0.wp.com/catcaresolutions.com/wp-content/uploads/2020/12/cute-cat-with-yellow-headband-on.png?fit=1000%2C1500&ssl=1">
+            blep
+        </a> <br>
+        <a href="https://media-cldnry.s-nbcnews.com/image/upload/newscms/2019_20/2860886/190517-grumpy-cat-mc-10372.JPG"
+        target="bg one">
+            I'm angy!
+        </a> <br>
+        <a href="https://preview.redd.it/xepayeksdhh11.jpg?auto=webp&s=f34a94efb3eb51b0bc1abe00a03d6cd485cea433"
+        target="bg two">
+            just a slice, not whole loaf
+        </a>
+    </body>
+</html>
