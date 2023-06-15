@@ -15,45 +15,40 @@
                 background-color: yellow;
             }
             div {
-                width: 100px;
-                height: 100px;
-                background-color:#25a888 ;
+                width: 200px;
+                height: 200px;
+                background: url("double-rainbow.jpg");
+                background-position: center top;
+                background-size: 500px 300px;
             }
             #bg1 {
-                background: linear-gradient(rgb(0, 183, 255),rgb(204, 0, 255));
+                background: lightblue;
             }
             #bg2 {
-                background: linear-gradient(90deg,blue,#25a888);
+                background: linear-gradient(rgb(0, 183, 255),rgb(204, 0, 255));
             }
             #bg3 {
+                background: linear-gradient(90deg,blue,#25a888);
+            }
+            #bg4 {
                 background: radial-gradient(rgb(125, 23, 134),rgb(0, 183, 255));
             }
-                    
+            span {
+                font-family: "Impact", Helvetica;
+                font-style: italic;
+                text-transform: uppercase;
+                text-decoration: line-through;
+                text-shadow: -4px 4px 4px gray;
+                line-height: 50%;
+                letter-spacing: 2px;
+                word-spacing: 4px;
+                text-align: left;
+                text-indent: 2rem;
+            }       
         </style>
     </head>
     <body>
         <h1>Today is All About CSS</h1>
-
-        <h2>About Text Color</h2>
-        We can use:
-        <ul>
-            <li>word</li> such as: yellow
-            <li>red, green, blue</li>such as: rgb(0, 0, 255)
-            <li>hexadecimal</li>with # then 6 digits number and A-F letters, such as: #00FF00
-            <li>hue, saturation, lightness value</li>such as: hsl(360,100%,75%)
-            <li>cyan, magenta, yellow, key(black) </li>
-            <li>alpha transparancy</li>
-            <ul>
-                <li>rgba(0,0,255,0.728)</li>
-                <li>hsla(360,100%,75%,0.5)</li>
-            </ul>
-        </ul>
-
-        <h2>What About Background Color?</h2>
-        <div></div>
-        <div id="bg1"></div>
-        <div id="bg2"></div>
-        <div id="bg3"></div>
 
         <h2>Let's Learn About CSS Selector</h2>
         <p>Hierarchically, there are:</p>
@@ -80,5 +75,86 @@
         target="bg two">
             just a slice, not whole loaf
         </a>
+
+        <h2>About Text Color</h2>
+        We can use:
+        <ul>
+            <li>word</li> such as: yellow
+            <li>red, green, blue</li>such as: rgb(0, 0, 255)
+            <li>hexadecimal</li>with # then 6 digits number and A-F letters, such as: #00FF00
+            <li>hue, saturation, lightness value</li>such as: hsl(360,100%,75%)
+            <li>cyan, magenta, yellow, key(black) </li>
+            <li>alpha transparancy</li>
+            <ul>
+                <li>rgba(0,0,255,0.728)</li>
+                <li>hsla(360,100%,75%,0.5)</li>
+            </ul>
+        </ul>
+
+        <h2>What About Background?</h2>
+        We can have solid color <div id="bg1"></div>
+        Gradient as a linear <div id="bg2"></div>
+        and you can adjust/tilt it<div id="bg3"></div>
+        Or maybe having a radial gradient<div id="bg4"></div>
+        Another one, you can insert image as a background. <div></div>
+
+        <h2>Font and Text</h2>
+        Now we'll explore this with 'span' tag.
+        <br> So, this is how we style our text without having semantic meaning.
+        <br> <br>
+        <span>
+            Hi! I wrote various style with this...
+            <br> It's too much
+            <br> But it's just a little practice
+        </span>
+        <br><br>
+        <ol> So, here are the list:
+            <li>font-family (web safe fonts)</li>
+            <ul>
+                <li>Arial</li>
+                <li>Helvetica</li>
+                <li>Times New Roman</li>
+                <li>Times</li>
+                <li>Courier New</li>
+                <li>Courier</li>
+                <li>Verdana</li>
+                <li>Georgie</li>
+                <li>Palatino</li>
+                <li>Garamond</li>
+                <li>Bookman</li>
+                <li>Comic Sans MS</li>
+                <li>Trebuchet MS</li>
+                <li>Arial Black</li>
+                <li>Impact</li>
+            </ul>
+            <li>font-style</li>
+            <ul>
+                <li>normal</li>
+                <li>italic</li>
+                <li>oblique</li>
+            </ul>
+            <li>text-transform</li>
+            <ul>
+                <li>capitalize</li>
+                <li>uppercase</li>
+                <li>lowercase</li>
+                <li>none</li>
+            </ul>
+            <li>text-decoration</li>
+            <ul>
+                <li>underline</li>
+                <li>overline</li>
+                <li>line-through</li>
+                <li>wavy</li>
+                <li>none</li>
+            </ul>
+            <li>text-align</li>
+            <ul>
+                <li>left</li>
+                <li>center</li>
+                <li>right</li>
+            </ul>
+        </ol>
+        We can also add Google Fonts :)
     </body>
 </html>
