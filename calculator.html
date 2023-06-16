@@ -3,10 +3,12 @@
     <head>
         <title>Calculator</title>
         <style>
+            h1 {
+                color: #42a3ff;
+            }
             h3 {
                 color:#b403b4;
             }
-
             button {
                 width: 100%;
                 border: none;
@@ -15,6 +17,7 @@
             .red {
                background-color: #e23754; 
                color: aliceblue;
+               grid-column: 1 / span 2;
             }
             .blue {
                 background-color: #42a3ff;
@@ -32,12 +35,18 @@
                 color: aliceblue;
             }
 
-            
+            .grid-container {
+                display: grid;
+                grid-template-columns: 40px 40px 40px 40px;
+                grid-gap: 5px;
+            }
+            input {
+                grid-column: 1 / span 4;
+            }
         </style>
     </head>
     <body>
-        <h3>Another One with Grid</h3>
-        
+        <h1> Let's Make Calculator</h1>
 
         <h3>First Practice</h3>
         <p>Let's make Calculator with a little bit of UI, there'll be 6 rows and 4 columns</p>
@@ -114,5 +123,30 @@
                 </td>
             </tr>
         </table>
+    
+        <h3>Another One with Grid</h3>
+        <p>So, we use input and buttons (4 columns x 6 rows) inside div. Then we style our div as grid (using class), style our input and red class wih grid column to span.</p>
+        <div class="grid-container">
+            <input type="text" name="display">
+            <button class="red">AC</button>
+                <button class="blue">C</button>
+                <button class="orange">*</button>
+            <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button class="orange">/</button>
+            <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button class="orange">+</button>
+            <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button class="orange">-</button>
+            <button class="gray">+-</button>
+                <button>0</button>
+                <button class="gray">.</button>
+                <button class="teal">=</button>
+        </div>
     </body>
 </html>
